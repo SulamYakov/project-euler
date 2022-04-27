@@ -6,7 +6,7 @@
 
 multLister :: (Integral a) => a -> a -> [a]
 multLister m l
+    |     l < m = error "Improper input: multiplicand must be less than desired limit."
     | quot == 1 = [m]
     | otherwise = [ quot*m ] ++ multLister m (l-m)
-    |     l < m = error "Improper input: multiplicand must be less than desired limit."
     where quot = (l-1) `div` m
