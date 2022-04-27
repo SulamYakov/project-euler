@@ -21,6 +21,7 @@ def lcm (m1, m2):
   ans = abs(m1*m2) // math.gcd(m1, m2)
   return ans
 
+# calculate final answer by first adding all multiples below the limit, then subtracting all common multiples from that result.
 finalAns = adder_prog(mult1, lim) + adder_prog(mult2, lim) - adder_prog(lcm(mult1, mult2), lim) 
 print(finalAns)
 
