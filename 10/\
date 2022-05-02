@@ -1,0 +1,4 @@
+-- Project Euler : Problem 10
+
+-- main = do
+--      sum $ primes 2000000
